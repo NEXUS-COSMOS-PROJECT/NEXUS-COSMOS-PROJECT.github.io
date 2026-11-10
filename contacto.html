@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contacto | Nexus-Cosmos</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navegación rápida (cohete) -->
+<input type="checkbox" id="qnchk" class="vh" aria-label="Navegación rápida">
+<div class="qn">
+  <a class="qn-item" href="index.html" style="--i:3">🏠 Inicio</a>
+  <a class="qn-item" href="misiones.html" style="--i:2">🚀 Misiones</a>
+  <a class="qn-item" href="informacion.html" style="--i:1">⭐ Información adicional</a>
+  <a class="qn-item" href="contacto.html" style="--i:0">✉️ Contacto</a>
+  <label class="qn-btn" for="qnchk" title="Navegación rápida"><img src="img/cohete.svg" alt="Cohete: abrir navegación rápida"></label>
+</div>
+
+<!-- Encabezado y menú principal -->
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/cohete.svg" alt="Logo de Nexus-Cosmos">NEXUS-COSMOS</a>
+  <input type="checkbox" id="mnchk" class="vh" aria-label="Abrir menú">
+  <label class="burger" for="mnchk" title="Menú">☰</label>
+  <nav aria-label="Menú principal"><a href="index.html">Inicio</a><a href="misiones.html">Misiones</a><a href="informacion.html">Información adicional</a><a href="contacto.html" aria-current="page">Contacto</a></nav>
+</header>
+<marquee class="tick" scrollamount="6">🚀 Última hora espacial ✦ El telescopio James Webb observa el universo en infrarrojo ✦ Perseverance busca señales de vida antigua en Marte ✦ La Voyager 1 es el objeto humano más lejano de la Tierra ✦ Artemis I rodeó la Luna en 2022 🌙</marquee>
+
+<section class="view on" id="v-nosotros"><div class="wrap">
+  <h2 class="glow">-NOSOTROS-</h2>
+  <p>¡En Nexus-Cosmos nos encargamos de tener la información más actualizada sobre las misiones espaciales de todo el mundo!</p>
+  <p>PÁGINA HECHA POR:<br><span class="who">HUGO ALEXANDER GARCÍA BADILLO</span></p>
+  <a class="go" href="#formulario">¡CONTÁCTANOS!</a>
+</div></section>
+
+<section class="view" id="v-contacto">
+  <span class="fl"><img src="img/tierra.svg" alt="Planeta Tierra"></span><span class="fl"><img src="img/astronauta.svg" alt="Astronauta flotando"></span><span class="fl"><img src="img/satelite.svg" alt="Satélite"></span><span class="fl"><img src="img/luna.svg" alt="La Luna"></span><span class="fl"><img src="img/bandera.svg" alt="Bandera en la Luna"></span>
+  <div class="wrap"><form class="holo" id="formulario" action="mailto:tu-correo@ejemplo.com" method="post" enctype="text/plain">
+    <div class="hd"><span>NOMBRE: *****</span><time datetime="2026-10-27">27/10/2026</time></div>
+    <label for="cn">Nombre</label><input id="cn" name="nombre" type="text" placeholder="Tu nombre" required>
+    <label for="ce">Correo electrónico</label><input id="ce" name="correo" type="email" placeholder="tu@correo.com" required>
+    <label for="cs">Este correo lo escribo por…</label>
+    <select id="cs" name="motivo"><option>Quiero aprender más</option><option>Quiero sugerir una misión</option><option>Encontré un error</option><option>Otro motivo</option></select>
+    <label for="cm">Mensaje</label><textarea id="cm" name="mensaje" rows="5" required></textarea>
+    <button class="send" type="submit">ENVIAR</button><button class="send alt" type="reset">LIMPIAR</button>
+  </form></div>
+</section>
+
+<marquee class="tick alt" direction="right" scrollamount="5">✉️ Escríbenos tu mensaje ✦ Nexus-Cosmos responde a todos los exploradores del cosmos 🚀</marquee>
+
+<footer class="foot">
+  <p>Nexus-Cosmos · Página hecha por Hugo Alexander García Badillo</p>
+  <p><a href="index.html">← Volver al inicio</a></p>
+</footer>
+</body>
+</html>

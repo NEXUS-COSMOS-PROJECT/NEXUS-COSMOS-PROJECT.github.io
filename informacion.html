@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Información adicional | Nexus-Cosmos</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navegación rápida (cohete) -->
+<input type="checkbox" id="qnchk" class="vh" aria-label="Navegación rápida">
+<div class="qn">
+  <a class="qn-item" href="index.html" style="--i:3">🏠 Inicio</a>
+  <a class="qn-item" href="misiones.html" style="--i:2">🚀 Misiones</a>
+  <a class="qn-item" href="informacion.html" style="--i:1">⭐ Información adicional</a>
+  <a class="qn-item" href="contacto.html" style="--i:0">✉️ Contacto</a>
+  <label class="qn-btn" for="qnchk" title="Navegación rápida"><img src="img/cohete.svg" alt="Cohete: abrir navegación rápida"></label>
+</div>
+
+<!-- Encabezado y menú principal -->
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/cohete.svg" alt="Logo de Nexus-Cosmos">NEXUS-COSMOS</a>
+  <input type="checkbox" id="mnchk" class="vh" aria-label="Abrir menú">
+  <label class="burger" for="mnchk" title="Menú">☰</label>
+  <nav aria-label="Menú principal"><a href="index.html">Inicio</a><a href="misiones.html">Misiones</a><a href="informacion.html" aria-current="page">Información adicional</a><a href="contacto.html">Contacto</a></nav>
+</header>
+<marquee class="tick" scrollamount="6">🚀 Última hora espacial ✦ El telescopio James Webb observa el universo en infrarrojo ✦ Perseverance busca señales de vida antigua en Marte ✦ La Voyager 1 es el objeto humano más lejano de la Tierra ✦ Artemis I rodeó la Luna en 2022 🌙</marquee>
+
+<section class="view on" id="v-info"><div class="wrap">
+  <h2>-INFORMACIÓN ADICIONAL-</h2>
+  <input type="checkbox" class="vh" id="starchk" aria-label="Mostrar dato curioso">
+  <div class="starwrap"><label class="star" for="starchk" title="Dato curioso"></label></div>
+  <div class="fbox">
+    <div class="factbox fb hint">Toca la estrella para descubrir un dato curioso. Tócala otra vez para cerrarlo.</div>
+    <div class="factbox fb cyc">
+      <p>✨ Un día en Venus dura más que su año: rota muy lento sobre su eje.</p>
+      <p>✨ Marte luce rojo por el óxido de hierro que cubre su superficie.</p>
+      <p>✨ La Gran Mancha Roja de Júpiter es una tormenta más grande que la Tierra.</p>
+      <p>✨ Saturno es tan poco denso que flotaría en agua, si existiera una bañera lo bastante grande.</p>
+      <p>✨ Las huellas de los astronautas en la Luna pueden durar millones de años porque no hay viento.</p>
+      <p>✨ La Luna se aleja de la Tierra unos 3.8 centímetros cada año.</p>
+      <p>✨ La luz del Sol tarda unos 8 minutos en llegar a la Tierra.</p>
+      <p>✨ El Sol contiene más del 99 % de toda la masa del Sistema Solar.</p>
+      <p>✨ En el espacio no hay aire, por eso el sonido no se propaga.</p>
+      <p>✨ Un año luz es la distancia que recorre la luz en un año: casi 9.46 billones de kilómetros.</p>
+      <p>✨ La Estación Espacial Internacional da una vuelta a la Tierra cada 90 minutos aproximadamente.</p>
+      <p>✨ El rover Perseverance llegó a Marte en febrero de 2021 junto con el helicóptero Ingenuity.</p>
+      </div>
+  </div>
+  <input type="radio" class="vh" name="f" id="f-all" checked><input type="radio" class="vh" name="f" id="f-pl"><input type="radio" class="vh" name="f" id="f-lu"><input type="radio" class="vh" name="f" id="f-es"><input type="radio" class="vh" name="f" id="f-ex"><input type="radio" class="vh" name="f" id="f-mi">
+  <div class="tools"><span>Filtro:</span> <label class="fchip" for="f-all">Todos</label> <label class="fchip" for="f-pl">Planetas</label> <label class="fchip" for="f-lu">Luna</label> <label class="fchip" for="f-es">Estrellas</label> <label class="fchip" for="f-ex">Espacio</label> <label class="fchip" for="f-mi">Misiones</label></div>
+  <div class="tw"><table>
+    <caption>Tabla de datos curiosos del universo</caption>
+    <thead>
+      <tr><th rowspan="2">Categoría</th><th colspan="3">Datos curiosos y adicionales</th></tr>
+      <tr><th>Nombre</th><th>Información</th><th>Imagen</th></tr>
+    </thead>
+    <tbody class="pl">
+      <tr><td class="cat" rowspan="4">Planetas</td><td>Día en Venus</td><td>Un día en Venus dura más que su año: rota muy lento sobre su eje.</td><td class="im"><img src="img/venus.svg" alt="Ilustración: Día en Venus"></td></tr>
+      <tr><td>Marte rojo</td><td>Marte luce rojo por el óxido de hierro que cubre su superficie.</td><td class="im"><img src="img/marte.svg" alt="Ilustración: Marte rojo"></td></tr>
+      <tr><td>Júpiter</td><td>La Gran Mancha Roja de Júpiter es una tormenta más grande que la Tierra.</td><td class="im"><img src="img/jupiter.svg" alt="Ilustración: Júpiter"></td></tr>
+      <tr><td>Saturno flota</td><td>Saturno es tan poco denso que flotaría en agua, si existiera una bañera lo bastante grande.</td><td class="im"><img src="img/saturno.svg" alt="Ilustración: Saturno flota"></td></tr>
+    </tbody>
+    <tbody class="lu">
+      <tr><td class="cat" rowspan="2">Luna</td><td>Huellas lunares</td><td>Las huellas de los astronautas en la Luna pueden durar millones de años porque no hay viento.</td><td class="im"><img src="img/bandera.svg" alt="Ilustración: Huellas lunares"></td></tr>
+      <tr><td>La Luna se aleja</td><td>La Luna se aleja de la Tierra unos 3.8 centímetros cada año.</td><td class="im"><img src="img/luna.svg" alt="Ilustración: La Luna se aleja"></td></tr>
+    </tbody>
+    <tbody class="es">
+      <tr><td class="cat" rowspan="2">Estrellas</td><td>Luz del Sol</td><td>La luz del Sol tarda unos 8 minutos en llegar a la Tierra.</td><td class="im"><img src="img/sol.svg" alt="Ilustración: Luz del Sol"></td></tr>
+      <tr><td>Masa del Sol</td><td>El Sol contiene más del 99 % de toda la masa del Sistema Solar.</td><td class="im"><img src="img/sol.svg" alt="Ilustración: Masa del Sol"></td></tr>
+    </tbody>
+    <tbody class="ex">
+      <tr><td class="cat" rowspan="2">Espacio</td><td>Silencio espacial</td><td>En el espacio no hay aire, por eso el sonido no se propaga.</td><td class="im"><img src="img/astronauta.svg" alt="Ilustración: Silencio espacial"></td></tr>
+      <tr><td>Año luz</td><td>Un año luz es la distancia que recorre la luz en un año: casi 9.46 billones de kilómetros.</td><td class="im"><img src="img/telescopio.svg" alt="Ilustración: Año luz"></td></tr>
+    </tbody>
+    <tbody class="mi">
+      <tr><td class="cat" rowspan="2">Misiones</td><td>Estación Espacial</td><td>La Estación Espacial Internacional da una vuelta a la Tierra cada 90 minutos aproximadamente.</td><td class="im"><img src="img/satelite.svg" alt="Ilustración: Estación Espacial"></td></tr>
+      <tr><td>Perseverance e Ingenuity</td><td>El rover Perseverance llegó a Marte en febrero de 2021 junto con el helicóptero Ingenuity.</td><td class="im"><img src="img/marte.svg" alt="Ilustración: Perseverance e Ingenuity"></td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="4">Nexus-Cosmos · 12 datos en 5 categorías</td></tr></tfoot>
+  </table></div>
+</div></section>
+
+<marquee class="tick alt" direction="right" scrollamount="5">⭐ Toca la estrella dorada para leer un dato curioso ✦ Filtra la tabla por categoría ✦ El universo es enorme y siempre hay algo nuevo por descubrir 🌌</marquee>
+
+<footer class="foot">
+  <p>Nexus-Cosmos · Página hecha por Hugo Alexander García Badillo</p>
+  <p><a href="index.html">← Volver al inicio</a></p>
+</footer>
+</body>
+</html>

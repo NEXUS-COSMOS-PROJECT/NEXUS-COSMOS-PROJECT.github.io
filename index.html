@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Inicio | Nexus-Cosmos</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navegación rápida (cohete) -->
+<input type="checkbox" id="qnchk" class="vh" aria-label="Navegación rápida">
+<div class="qn">
+  <a class="qn-item" href="index.html" style="--i:3">🏠 Inicio</a>
+  <a class="qn-item" href="misiones.html" style="--i:2">🚀 Misiones</a>
+  <a class="qn-item" href="informacion.html" style="--i:1">⭐ Información adicional</a>
+  <a class="qn-item" href="contacto.html" style="--i:0">✉️ Contacto</a>
+  <label class="qn-btn" for="qnchk" title="Navegación rápida"><img src="img/cohete.svg" alt="Cohete: abrir navegación rápida"></label>
+</div>
+
+<!-- Encabezado y menú principal -->
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/cohete.svg" alt="Logo de Nexus-Cosmos">NEXUS-COSMOS</a>
+  <input type="checkbox" id="mnchk" class="vh" aria-label="Abrir menú">
+  <label class="burger" for="mnchk" title="Menú">☰</label>
+  <nav aria-label="Menú principal"><a href="index.html" aria-current="page">Inicio</a><a href="misiones.html">Misiones</a><a href="informacion.html">Información adicional</a><a href="contacto.html">Contacto</a></nav>
+</header>
+<marquee class="tick" scrollamount="6">🚀 Última hora espacial ✦ El telescopio James Webb observa el universo en infrarrojo ✦ Perseverance busca señales de vida antigua en Marte ✦ La Voyager 1 es el objeto humano más lejano de la Tierra ✦ Artemis I rodeó la Luna en 2022 🌙</marquee>
+
+<main class="view on" id="v-inicio"><div class="wrap">
+  <div class="titlebox"><img src="img/saturno.svg" alt="Planeta con anillos" class="pl"><h1 class="glow">NEXUS-COSMOS</h1><img src="img/cohete.svg" alt="Cohete" class="pl"></div>
+  <p class="tagline glow">En Nexus-Cosmos nos encargamos de publicar la información más actualizada de las misiones espaciales de todo el mundo.</p>
+  <div class="choices">
+    <a class="choice p" href="misiones.html#pasado"><div class="img"><img src="img/pasado.svg" alt="Cohete sobre un planeta naranja"></div><h2 class="glow">-PASADO-</h2><div class="br"></div></a>
+    <a class="choice a" href="misiones.html#actualidad"><div class="img"><img src="img/actualidad.svg" alt="Cohete sobre un planeta azul"></div><h2 class="glow">-ACTUALIDAD-</h2><div class="br"></div></a>
+  </div>
+  <div class="tiles">
+    <article class="tile"><img src="img/cohete.svg" alt="Cohete"><h3>Misiones</h3><p>Satélites, exploración y vuelos tripulados, del pasado y de hoy.</p><a class="mini" href="misiones.html">Ver misiones</a></article>
+    <article class="tile"><img src="img/sol.svg" alt="El Sol"><h3>Información adicional</h3><p>Datos curiosos del universo y una tabla para consultar.</p><a class="mini" href="informacion.html">Descubrir</a></article>
+    <article class="tile"><img src="img/astronauta.svg" alt="Astronauta"><h3>Contacto</h3><p>Conoce al autor del sitio y escríbenos un mensaje.</p><a class="mini" href="contacto.html">Escribir</a></article>
+    </div>
+</div></main>
+
+<marquee class="tick alt" direction="right" scrollamount="5">🪐 Elige una época: el pasado de la conquista espacial o las misiones de la actualidad ✦ Nexus-Cosmos: tu portal de misiones espaciales 🛰️</marquee>
+
+<footer class="foot">
+  <p>Nexus-Cosmos · Página hecha por Hugo Alexander García Badillo</p>
+  <p><a href="index.html">← Volver al inicio</a></p>
+</footer>
+</body>
+</html>

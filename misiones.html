@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Misiones | Nexus-Cosmos</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navegación rápida (cohete) -->
+<input type="checkbox" id="qnchk" class="vh" aria-label="Navegación rápida">
+<div class="qn">
+  <a class="qn-item" href="index.html" style="--i:3">🏠 Inicio</a>
+  <a class="qn-item" href="misiones.html" style="--i:2">🚀 Misiones</a>
+  <a class="qn-item" href="informacion.html" style="--i:1">⭐ Información adicional</a>
+  <a class="qn-item" href="contacto.html" style="--i:0">✉️ Contacto</a>
+  <label class="qn-btn" for="qnchk" title="Navegación rápida"><img src="img/cohete.svg" alt="Cohete: abrir navegación rápida"></label>
+</div>
+
+<!-- Encabezado y menú principal -->
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/cohete.svg" alt="Logo de Nexus-Cosmos">NEXUS-COSMOS</a>
+  <input type="checkbox" id="mnchk" class="vh" aria-label="Abrir menú">
+  <label class="burger" for="mnchk" title="Menú">☰</label>
+  <nav aria-label="Menú principal"><a href="index.html">Inicio</a><a href="misiones.html" aria-current="page">Misiones</a><a href="informacion.html">Información adicional</a><a href="contacto.html">Contacto</a></nav>
+</header>
+<marquee class="tick" scrollamount="6">🚀 Última hora espacial ✦ El telescopio James Webb observa el universo en infrarrojo ✦ Perseverance busca señales de vida antigua en Marte ✦ La Voyager 1 es el objeto humano más lejano de la Tierra ✦ Artemis I rodeó la Luna en 2022 🌙</marquee>
+
+<section class="view era" id="pasado" data-theme="pasado"><div class="wrap">
+  <span class="chip-tag">MISIONES PASADAS</span>
+  <h2 class="eh">Las misiones que abrieron el camino</h2>
+  <div class="bar"><a class="chip on" href="#pasado">Pasado</a><a class="chip" href="#actualidad">Actualidad</a></div>
+  <input type="radio" class="vh" name="pm" id="p1" aria-label="Sputnik 1"><input type="radio" class="vh" name="pm" id="p2" aria-label="Vostok 1"><input type="radio" class="vh" name="pm" id="p3" aria-label="Apolo 11"><input type="radio" class="vh" name="pm" id="p4" aria-label="Voyager 1"><input type="radio" class="vh" name="pm" id="p5" aria-label="Hubble">
+  <input type="radio" class="vh" name="pcat" id="pc-all" checked><input type="radio" class="vh" name="pcat" id="pc-sat"><input type="radio" class="vh" name="pcat" id="pc-exp"><input type="radio" class="vh" name="pcat" id="pc-trip">
+  <div class="bar"><label class="chip" for="pc-all">Todas</label><label class="chip" for="pc-sat">Satelital</label><label class="chip" for="pc-exp">Exploración</label><label class="chip" for="pc-trip">Tripulada</label></div>
+  <div class="mgrid">
+    <div class="mlist">
+      <label class="mbtn sat" for="p1"><span>Sputnik 1<small>Satelital</small></span><img src="img/satelite.svg" alt=""></label>
+      <label class="mbtn trip" for="p2"><span>Vostok 1<small>Tripulada</small></span><img src="img/astronauta.svg" alt=""></label>
+      <label class="mbtn trip" for="p3"><span>Apolo 11<small>Tripulada</small></span><img src="img/luna.svg" alt=""></label>
+      <label class="mbtn exp" for="p4"><span>Voyager 1<small>Exploración</small></span><img src="img/sonda.svg" alt=""></label>
+      <label class="mbtn sat" for="p5"><span>Hubble<small>Satelital</small></span><img src="img/telescopio.svg" alt=""></label>
+      </div>
+    <div class="holo">
+      <p class="empty hint">Selecciona una misión para abrir la pantalla holográfica.</p>
+      <div class="hp ph1"><h3>SPUTNIK 1 - AÑO 1957</h3><div class="row"><p>Primer satélite artificial de la historia, lanzado por la Unión Soviética. Inició la carrera espacial.<br><em style="color:var(--acc)">Tipo: Satelital</em></p><img src="img/satelite.svg" alt="Ilustración de Sputnik 1" class="big"></div></div>
+      <div class="hp ph2"><h3>VOSTOK 1 - AÑO 1961</h3><div class="row"><p>Yuri Gagarin se convirtió en el primer ser humano en viajar al espacio y orbitar la Tierra.<br><em style="color:var(--acc)">Tipo: Tripulada</em></p><img src="img/astronauta.svg" alt="Ilustración de Vostok 1" class="big"></div></div>
+      <div class="hp ph3"><h3>APOLO 11 - AÑO 1969</h3><div class="row"><p>Neil Armstrong y Buzz Aldrin pisaron la Luna por primera vez, mientras Michael Collins esperaba en órbita.<br><em style="color:var(--acc)">Tipo: Tripulada</em></p><img src="img/luna.svg" alt="Ilustración de Apolo 11" class="big"></div></div>
+      <div class="hp ph4"><h3>VOYAGER 1 - AÑO 1977</h3><div class="row"><p>Sonda que visitó Júpiter y Saturno, y hoy es el objeto humano más lejano de la Tierra.<br><em style="color:var(--acc)">Tipo: Exploración</em></p><img src="img/sonda.svg" alt="Ilustración de Voyager 1" class="big"></div></div>
+      <div class="hp ph5"><h3>HUBBLE - AÑO 1990</h3><div class="row"><p>Telescopio espacial que ha capturado imágenes profundas del universo durante más de tres décadas.<br><em style="color:var(--acc)">Tipo: Satelital</em></p><img src="img/telescopio.svg" alt="Ilustración de Hubble" class="big"></div></div>
+      </div>
+  </div>
+</div></section>
+<section class="view era" id="actualidad" data-theme="actualidad"><div class="wrap">
+  <span class="chip-tag">MISIONES ACTUALES</span>
+  <h2 class="eh">Misiones de la actualidad</h2>
+  <div class="bar"><a class="chip" href="#pasado">Pasado</a><a class="chip on" href="#actualidad">Actualidad</a></div>
+  <input type="radio" class="vh" name="am" id="a1" aria-label="Crew Dragon Demo-2"><input type="radio" class="vh" name="am" id="a2" aria-label="Perseverance"><input type="radio" class="vh" name="am" id="a3" aria-label="James Webb"><input type="radio" class="vh" name="am" id="a4" aria-label="Artemis I"><input type="radio" class="vh" name="am" id="a5" aria-label="Chandrayaan-3">
+  <input type="radio" class="vh" name="acat" id="ac-all" checked><input type="radio" class="vh" name="acat" id="ac-sat"><input type="radio" class="vh" name="acat" id="ac-exp"><input type="radio" class="vh" name="acat" id="ac-trip">
+  <div class="bar"><label class="chip" for="ac-all">Todas</label><label class="chip" for="ac-sat">Satelital</label><label class="chip" for="ac-exp">Exploración</label><label class="chip" for="ac-trip">Tripulada</label></div>
+  <div class="mgrid">
+    <div class="mlist">
+      <label class="mbtn trip" for="a1"><span>Crew Dragon Demo-2<small>Tripulada</small></span><img src="img/cohete.svg" alt=""></label>
+      <label class="mbtn exp" for="a2"><span>Perseverance<small>Exploración</small></span><img src="img/marte.svg" alt=""></label>
+      <label class="mbtn sat" for="a3"><span>James Webb<small>Satelital</small></span><img src="img/telescopio.svg" alt=""></label>
+      <label class="mbtn exp" for="a4"><span>Artemis I<small>Exploración</small></span><img src="img/luna.svg" alt=""></label>
+      <label class="mbtn exp" for="a5"><span>Chandrayaan-3<small>Exploración</small></span><img src="img/luna.svg" alt=""></label>
+      </div>
+    <div class="holo">
+      <p class="empty hint">Selecciona una misión para abrir la pantalla holográfica.</p>
+      <div class="hp ah1"><h3>CREW DRAGON DEMO-2 - AÑO 2020</h3><div class="row"><p>Primer vuelo orbital tripulado operado por una empresa privada, con destino a la Estación Espacial Internacional.<br><em style="color:var(--acc)">Tipo: Tripulada</em></p><img src="img/cohete.svg" alt="Ilustración de Crew Dragon Demo-2" class="big"></div></div>
+      <div class="hp ah2"><h3>PERSEVERANCE - AÑO 2021</h3><div class="row"><p>Rover de la NASA que busca señales de vida antigua en Marte y recolecta muestras para traerlas a la Tierra.<br><em style="color:var(--acc)">Tipo: Exploración</em></p><img src="img/marte.svg" alt="Ilustración de Perseverance" class="big"></div></div>
+      <div class="hp ah3"><h3>JAMES WEBB - AÑO 2021</h3><div class="row"><p>Telescopio infrarrojo que observa las primeras galaxias y estudia atmósferas de exoplanetas.<br><em style="color:var(--acc)">Tipo: Satelital</em></p><img src="img/telescopio.svg" alt="Ilustración de James Webb" class="big"></div></div>
+      <div class="hp ah4"><h3>ARTEMIS I - AÑO 2022</h3><div class="row"><p>Vuelo de prueba sin tripulación de la cápsula Orión alrededor de la Luna, primer paso del programa Artemis.<br><em style="color:var(--acc)">Tipo: Exploración</em></p><img src="img/luna.svg" alt="Ilustración de Artemis I" class="big"></div></div>
+      <div class="hp ah5"><h3>CHANDRAYAAN-3 - AÑO 2023</h3><div class="row"><p>India logró un alunizaje suave cerca del polo sur lunar, una región clave por su posible hielo de agua.<br><em style="color:var(--acc)">Tipo: Exploración</em></p><img src="img/luna.svg" alt="Ilustración de Chandrayaan-3" class="big"></div></div>
+      </div>
+  </div>
+</div></section>
+
+
+<marquee class="tick alt" direction="right" scrollamount="5">🛰️ Filtra las misiones por tipo: satelital, exploración o tripulada ✦ Haz clic en una misión para abrir la pantalla holográfica 🔭</marquee>
+
+<footer class="foot">
+  <p>Nexus-Cosmos · Página hecha por Hugo Alexander García Badillo</p>
+  <p><a href="index.html">← Volver al inicio</a></p>
+</footer>
+</body>
+</html>
